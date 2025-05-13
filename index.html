@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bourbon Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-overlay">
+      <nav class="nav-links">
+        <a href="roadmap.html">ROADMAP</a>
+        <a href="index.html">GET FREE TOKEN</a>
+        <a href="https://x.com/bourboncoinX" target="_blank">FOLLOW US ON <i class="fa-brands fa-x-twitter"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <img class="logo-full" src="./assets/BourbonCoin-logo.png" alt="Full Logo" />
+      <h1>Batch0 - A Quiet Start.<span><br /> A Bold Future.</span></h1>
+      <p class="biggerp"><strong>Be there before it begins.</strong></p>
+      <p>
+        Batch0 is your early invitation into something big. We’re starting small, quietly — just like a fine bourbon ages in silence before making history.
+      </p>
+      <div class="button-container">
+        <a href="https://bourboncoin.app/?mode=start"><button class="btn">GET STARTED</button></a>
+        <a href="https://bourboncoin.com/tasting/"><button class="btn">LEARN MORE</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section2 hero">
+    <h2>Get a Free Taste</h2>
+    <p class="biggerp"><strong>Offer Ends</strong><br /></p>
+    <div id="countdown">00:00:00:00</div>
+
+    <section class="slider-section">
+      <div class="slider-container">
+        <div class="slider" id="slider">
+          <div class="slide">
+            <img src="./assets/Bourby1.webp" alt="Slide 1" class="card-image" />
+          </div>
+          <div class="slide">
+            <img src="./assets/BourbonCoin.png" alt="Slide 2" class="card-image" />
+          </div>
+        </div>
+        <div class="nav-buttons">
+          <button onclick="moveSlide(-1)">‹</button>
+          <button onclick="moveSlide(1)">›</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/countdown.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
